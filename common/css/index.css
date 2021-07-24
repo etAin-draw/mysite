@@ -88,9 +88,10 @@ article.art_list section a:hover img{
 .art_list .tag{
 	width: 95%;
 	margin: 5px auto 0px;
+	display: flex;
 }
 .art_list .tag span{
-	display: inline-block;
+	display: block;
 	padding: 2px 5px;
 	margin: 0px 5px 3px 0px;
 	border-radius: 5px;
