@@ -240,13 +240,15 @@ h2::after{
 .btn{
 	width: 250px;
 	height: 40px;
-	line-height: 40px;
+	line-height: 38px;
 	display: block;
+	box-sizing: border-box;
 
 	margin: 0px auto;
 	margin-top: 20px;
 
 	background: rgb(29, 202, 188);
+	border:rgb(29, 202, 188) 2px solid;
 	color:rgb(255,255,255);
 	border-radius: 20px;
 	box-shadow: 3px 3px 3px 0px rgb(128, 128, 128);
@@ -257,13 +259,32 @@ h2::after{
 	transform: translate( -3px, -3px);
 }
 .btn:hover{
-	color:rgb(255,255,255);
+	background:rgb(255, 255, 255);
+	color:rgb(29, 202, 188);
 	box-shadow: none;
 
 	transition: 0.3s;
 	transform: translate( 0px, 0px);
 }
-/*.new-icon*/
-.new-icon{
-	
+/*.new_icon*/
+.new_icon::before{
+	content: "new";
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	display: block;
+	z-index: 20;
+
+	border-radius: 15px;
+
+	background: rgba(175, 25, 25, 0.800);
+	color: rgb(255, 255, 255);
+	font-size: 0.5rem;
+	text-align: center;
+	box-shadow: 0.2px 0.2px 0.2px 0px rgb(128, 128, 128);
+
+	transform: translate( -30%, -30%);
 }
