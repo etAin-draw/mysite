@@ -81,22 +81,24 @@ article.art_list section a:hover img{
 	width: 95%;
 	margin: 0px auto;
 
-	color:rgb(87, 94, 72);
+	color:rgb(115, 122, 98);
 	font-size: 0.8rem;
 }
 /*.art_list .tag*/
 .art_list .tag{
 	width: 95%;
 	margin: 5px auto 0px;
-	display: flex;
 }
 .art_list .tag span{
-	display: block;
+	display: inline-block;
 	padding: 2px 5px;
-	margin: 0px 5px 3px 0px;
+	margin: 0px 3px 3px 0px;
 	border-radius: 5px;
 
 	background:rgb(70, 157, 163);
 	color:rgb( 255, 255, 255);
 	font-size: 0.8rem;
+}
+.art_list .tag span:last-child{
+	margin-right: 0px;
 }
