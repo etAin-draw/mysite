@@ -3,3 +3,41 @@
 article#member{
 	margin-top: 30px;
 }
+article#member section{
+	display: grid;
+	gap: 20px;
+	grid-template-columns: 1fr 1fr;
+}
+article#member section div h3{
+	width: 40%;
+	height: 50px;
+	line-height: 50px;
+	position: relative;
+	margin: 0px auto 20px;
+
+	background: rgb( 255, 255, 255);
+	box-shadow: 2px 2px 2px 0px rgb(128, 128, 128);
+
+	font-size: 1.2rem;
+	text-align: center;
+}
+article#member section div img{
+	width: 150px;
+	height: 150px;
+	display: block;
+	margin: 0px auto;
+
+	border: rgb(115, 115, 115) 1px solid;
+	border-radius: 75px;
+
+	pointer-events: none;
+}
+article#member section div table{
+	width: 80%;
+	margin: 0px auto;
+}
+article#member section div table th,
+article#member section div table td{
+	padding: 10px;
+	border-bottom:rgb(115, 115, 115) solid 1px;
+}
